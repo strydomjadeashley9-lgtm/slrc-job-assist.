@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 Crew AI Architect Interface</title>
+</head>
+<body>
+  <h1>🚀 Crew AI Architect Interface</h1>
+  <p>Enter your instruction for the Architect Agent:</p>
+  <textarea id="instruction" rows="10" cols="100" placeholder="Type your instruction here..."></textarea><br><br>
+  <button onclick="sendInstruction()">Send to Architect</button>
+
+  <h2>Result</h2>
+  <pre id="result"></pre>
+
+  <script>
+    async function sendInstruction() {
+      const instruction = document.getElementById("instruction").value;
+      const response = await fetch("/architect", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ instruction })
+      });
+      const data = await response.json();
+      document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>

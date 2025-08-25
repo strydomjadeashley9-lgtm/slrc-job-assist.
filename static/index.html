@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🚀 CrewAI Job Scraper Control Panel</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    textarea { width: 100%; height: 150px; }
+    button { margin-top: 10px; margin-right: 5px; padding: 8px 12px; }
+    #result, #chat-box {
+      margin-top: 20px; padding: 10px; border: 1px solid #ccc;
+      min-height: 200px; max-height: 400px; overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 CrewAI Job Scraper Control Panel</h1>
+
+  <!-- Master Project Instructions -->
+  <h2>Full Project Instructions</h2>
+  <textarea id="instruction" placeholder="Type your instruction here..."></textarea><br>
+  <button onclick="sendInstruction()">Send Instruction</button>
+
+  <h2>Result</h2>
+  <div id="result"></div>
+
+  <hr>
+
+  <!-- Architect Chat -->
+  <h2>Chat with Architect</h2>
+  <div id="chat-box"></div>
+  <input type="text" id="chat-input" placeholder="Ask the Architect..." style="width:80%;">
+  <button onclick="sendChat()">Send</button>
+
+  <script>
+    async function sendInstruction() {
+      const instruction = document.getElementById("instruction").value;
+      const response = await fetch("/instruct", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ instruction })
+      });
+      const data = await response.json();
+      document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+    }
+
+    async function sendChat() {
+      const message = document.getElementById("chat-input").value;
+      const response = await fetch("/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ message })
+      });
+      const data = await response.json();
+      const chatBox = document.getElementById("chat-box");
+      chatBox.innerHTML = data.history.map(m => `<b>${m.role}:</b> ${m.content}`).join("<br>");
+      document.getElementById("chat-input").value = "";
+    }
+  </script>
+</body>
+</html>
