@@ -1,309 +1,390 @@
-﻿# main.py - Complete Job Application Management System
-from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
-from fastapi.staticfiles import StaticFiles
-import uvicorn
 import os
 import json
 import pandas as pd
-from datetime import datetime
-from typing import Dict, List, Optional
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse, JSONResponse, FileResponse, RedirectResponse
+from fastapi.staticfiles import StaticFiles
+from dotenv import load_dotenv
 import requests
-import subprocess
-from pathlib import Path
+from apscheduler.schedulers.background import BackgroundScheduler
 
-# Configuration
-AIRTABLE_API_KEY = os.getenv('AIRTABLE_API_KEY', 'YOUR_AIRTABLE_API_KEY')
-AIRTABLE_BASE_ID = os.getenv('AIRTABLE_BASE_ID', 'YOUR_AIRTABLE_BASE_ID')
-AIRTABLE_TABLE_NAME = os.getenv('AIRTABLE_TABLE_NAME', 'Job Seekers')
+# Your scraper function
+from scraper import run_scraper
 
-# Create required directories
-for directory in ["static", "results", "logs"]:
-    if not os.path.exists(directory):
-        os.makedirs(directory)
+load_dotenv()
 
-app = FastAPI(title="Job Application Management System")
+app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Global state management
-system_state = {
-    "clients": {},
-    "active_searches": {},
-    "search_history": [],
-    "airtable_connected": False,
-    "job_scraper_available": False
-}
+AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
+AIRTABLE_BASE_ID = os.getenv("AIRTABLE_BASE_ID")
+AIRTABLE_TABLE_NAME = os.getenv("AIRTABLE_TABLE_NAME")
 
-class AirtableManager:
-    def __init__(self):
-        self.api_key = AIRTABLE_API_KEY
-        self.base_id = AIRTABLE_BASE_ID
-        self.table_name = AIRTABLE_TABLE_NAME
-        self.base_url = f"https://api.airtable.com/v0/{self.base_id}/{self.table_name}"
-        
-    def get_headers(self):
-        return {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
-    
-    def test_connection(self):
-        try:
-            response = requests.get(f"{self.base_url}?maxRecords=1", headers=self.get_headers(), timeout=10)
-            return response.status_code == 200
-        except Exception as e:
-            print(f"Airtable connection failed: {e}")
-            return False
-    
-    def get_all_clients(self):
-        try:
-            clients = {}
-            response = requests.get(self.base_url, headers=self.get_headers(), timeout=30)
-            
-            if response.status_code != 200:
-                print(f"Airtable API error: {response.status_code}")
-                return {}
-            
-            data = response.json()
-            records = data.get("records", [])
-            print(f"DEBUG: Found {len(records)} records")
-            
-            for record in records:
-                fields = record.get("fields", {})
-                client_name = fields.get("Full Name")
-                print(f"DEBUG: Processing {client_name}")
-                
-                if client_name:
-                    skills_array = fields.get("Skills", [])
-                    profession = skills_array[0] if skills_array and len(skills_array) > 0 else "Professional"
-                    
-                    clients[client_name] = {
-                        "id": record.get("id"),
-                        "name": client_name,
-                        "profession": profession,
-                        "location": fields.get("Location", "Remote"),
-                        "job_preferences": fields.get("Job Preferences", ""),
-                        "email": fields.get("Email Address", ""),
-                        "skills": ", ".join(skills_array) if skills_array else "",
-                        "last_updated": datetime.now().isoformat()
-                    }
-                    print(f"DEBUG: Added {client_name} - {profession}")
-            
-            print(f"DEBUG: Total clients loaded: {len(clients)}")
-            return clients
-        except Exception as e:
-            print(f"Error fetching clients: {e}")
-            return {}
+clients_data = {}
+RESULTS_DIR = "results"
+os.makedirs(RESULTS_DIR, exist_ok=True)
 
-def mock_jobs(client_data):
-    profession = client_data.get("profession", "Professional")
-    location = client_data.get("location", "Remote")
-    jobs = []
-    for i, company in enumerate(["TechCorp", "BuildCorp", "ServiceCorp"]):
-        jobs.append({
-            "company_name": company,
-            "job_title": f"{profession} Position",
-            "job_description": f"Great opportunity for {profession} in {location}",
-            "location": location,
-            "salary_range": f"${50000 + i*10000} - ${70000 + i*10000}",
-            "application_link": f"https://{company.lower()}.com/apply",
-            "posted_date": datetime.now().strftime("%Y-%m-%d"),
-            "job_type": "Full-time",
-            "requirements": f"{profession} experience required"
-        })
-    return jobs
+scheduler = BackgroundScheduler()
 
-def generate_excel(client_name, jobs, search_date):
-    try:
-        results_dir = Path("results")
-        results_dir.mkdir(exist_ok=True)
-        
-        excel_data = []
-        for job in jobs:
-            excel_data.append({
-                "Company Name": job.get("company_name", ""),
-                "Job Title": job.get("job_title", ""),
-                "Job Description": job.get("job_description", ""),
-                "Location": job.get("location", ""),
-                "Salary Range": job.get("salary_range", ""),
-                "Application Link": job.get("application_link", ""),
-                "Applied": "No",
-                "Posted Date": job.get("posted_date", ""),
-                "Found Date": search_date
-            })
-        
-        df = pd.DataFrame(excel_data)
-        safe_name = "".join(c for c in client_name if c.isalnum() or c in (' ', '-', '_')).rstrip()
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"{safe_name}_jobs_{timestamp}.xlsx"
-        filepath = results_dir / filename
-        
-        df.to_excel(filepath, index=False)
-        return str(filepath)
-    except Exception as e:
-        print(f"Excel error: {e}")
-        return None
 
-# Initialize
-airtable_manager = AirtableManager()
+def fetch_clients_from_airtable():
+    """Load clients from Airtable and store in clients_data"""
+    global clients_data
+    url = f"https://api.airtable.com/v0/{AIRTABLE_BASE_ID}/{AIRTABLE_TABLE_NAME}"
+    headers = {"Authorization": f"Bearer {AIRTABLE_API_KEY}"}
+    response = requests.get(url, headers=headers)
 
-def initialize_system():
-    global system_state
-    print("🚀 Initializing Job Application Management System...")
-    
-    system_state["airtable_connected"] = airtable_manager.test_connection()
-    if system_state["airtable_connected"]:
-        print("✅ Airtable connection successful")
-        system_state["clients"] = airtable_manager.get_all_clients()
-        print(f"📋 Loaded {len(system_state['clients'])} clients from Airtable")
-    else:
-        print("⚠️ Airtable connection failed - using mock data")
-        system_state["clients"] = {
-            "John Smith": {"name": "John Smith", "profession": "Plumber", "location": "New York", "job_preferences": "residential"}
+    if response.status_code != 200:
+        print("❌ Airtable error:", response.status_code, response.text)
+        return
+
+    records = response.json().get("records", [])
+    clients_data = {}
+
+    for record in records:
+        fields = record.get("fields", {})
+        name = fields.get("Name")
+        profession = fields.get("Profession", "Unknown")
+        location = fields.get("Location", "New Zealand")
+        scrape_time = fields.get("Scrape Time", "08:00")  # default 8am
+        cv_keywords = fields.get("CV Keywords", "")
+
+        if name:
+            clients_data[name] = {
+                "name": name,
+                "profession": profession,
+                "location": location,
+                "scrape_time": scrape_time,
+                "cv_keywords": cv_keywords,
+                "last_run": "Never",
+                "last_count": 0
+            }
+    print(f"📦 Clients loaded: {len(clients_data)}")
+
+
+def scheduled_scrape(client):
+    """Run scraper for one client and save to their CSV"""
+    query = f"{client['profession']} jobs {client['location']}"
+    jobs = run_scraper(query)
+
+    # Filter by CV keywords if present
+    keywords = [k.strip().lower() for k in client.get("cv_keywords", "").split(",") if k.strip()]
+    if keywords:
+        jobs = [
+            job for job in jobs
+            if any(k in (job.get("title", "") + job.get("description", "")).lower() for k in keywords)
+        ]
+
+    # Save to client-specific CSV
+    safe_name = client['name'].replace(" ", "_")
+    filename = os.path.join(RESULTS_DIR, f"{safe_name}.csv")
+
+    df = pd.DataFrame([
+        {
+            "Job Title": job.get("title"),
+            "Company Name": job.get("company"),
+            "Application Weblink": job.get("link"),
+            "Location": job.get("location")
         }
+        for job in jobs
+    ])
+    df.to_csv(filename, index=False)
 
-initialize_system()
+    # Update client metadata
+    client["last_run"] = pd.Timestamp.now().strftime("%Y-%m-%d %H:%M")
+    client["last_count"] = len(jobs)
 
+    print(f"✅ Scraped {len(jobs)} jobs for {client['name']} -> {filename}")
+
+
+@app.on_event("startup")
+def startup_event():
+    """On startup: fetch clients and schedule jobs"""
+    fetch_clients_from_airtable()
+    for client in clients_data.values():
+        try:
+            hour, minute = client["scrape_time"].split(":")
+            scheduler.add_job(
+                scheduled_scrape,
+                "cron",
+                hour=int(hour),
+                minute=int(minute),
+                args=[client]
+            )
+            print(f"⏰ Scheduled {client['name']} at {client['scrape_time']}")
+        except Exception as e:
+            print(f"⚠️ Could not schedule {client['name']}: {e}")
+    scheduler.start()
+
+
+# ------------------------
+# HOMEPAGE
+# ------------------------
 @app.get("/", response_class=HTMLResponse)
-async def get_index():
-    return HTMLResponse("""
-<!DOCTYPE html>
-<html><head><title>Job Application Management</title><style>
-body{font-family:Arial;margin:20px;background:#f5f5f5}
-.container{max-width:1000px;margin:0 auto;background:white;padding:20px;border-radius:10px}
-select,button{width:100%;padding:10px;margin:10px 0;font-size:16px}
-button{background:#007bff;color:white;border:none;cursor:pointer;border-radius:5px}
-button:disabled{background:#ccc}
-.client-info{background:#e7f3ff;padding:15px;margin:10px 0;border-radius:5px;display:none}
-.results{background:#f8f9fa;padding:15px;margin:10px 0;border-radius:5px;max-height:400px;overflow-y:auto}
-.job-item{border-bottom:1px solid #ddd;padding:10px 0}
-.success{background:#d4edda;color:#155724;padding:10px;border-radius:5px;margin:10px 0;display:none}
-</style></head><body>
-<div class="container">
-<h1>🎯 Job Application Management System</h1>
-<select id="client-select" onchange="onClientSelect()"><option value="">Choose a client...</option></select>
-<div id="client-info" class="client-info"></div>
-<button id="search-btn" onclick="launchSearch()" disabled>🚀 Launch Job Search</button>
-<div id="success" class="success"></div>
-<div id="results" class="results">Select a client and launch search to see results.</div>
-</div>
+async def root():
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>SLRC Job Assist</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { margin: 0; font-family: Arial, sans-serif; }
+            .hero {
+                background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+                background-size: cover;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+            }
+            .hero h1 { font-size: 3rem; font-weight: bold; }
+            .hero p { font-size: 1.25rem; margin-bottom: 20px; }
+            .btn-custom {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div>
+                <h1>SLRC Job Assist</h1>
+                <p>Smart Job Finder & Client Matching Dashboard</p>
+                <a href="/jobs" class="btn btn-success btn-custom">Jobs Page</a>
+                <a href="/status" class="btn btn-warning btn-custom">Status Dashboard</a>
+            </div>
+        </div>
+    </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content)
 
-<script>
-let clients = {};
 
-async function loadClients() {
-    const response = await fetch('/clients');
-    const data = await response.json();
-    clients = data.clients;
-    
-    const select = document.getElementById('client-select');
-    select.innerHTML = '<option value="">Choose a client...</option>';
-    
-    Object.keys(clients).forEach(name => {
-        const option = document.createElement('option');
-        option.value = name;
-        option.textContent = `${name} (${clients[name].profession})`;
-        select.appendChild(option);
-    });
-}
+# ------------------------
+# JOBS PAGE
+# ------------------------
+@app.get("/jobs", response_class=HTMLResponse)
+async def jobs_page():
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>SLRC Job Assist - Jobs</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { background-color: #f8f9fa; }
+            .hero {
+                background: url('https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+                background-size: cover;
+                padding: 60px 20px;
+                color: white;
+                text-align: center;
+            }
+            .hero h1 { font-weight: bold; font-size: 2.5rem; }
+            .xray-box {
+                background: #fff3cd;
+                border: 1px solid #ffeeba;
+                padding: 15px;
+                margin-top: 20px;
+                font-family: monospace;
+            }
+        </style>
+        <script>
+            async function loadClients() {
+                const res = await fetch('/api/clients');
+                const data = await res.json();
+                const datalist = document.getElementById('clients');
+                data.forEach(c => {
+                    const option = document.createElement('option');
+                    option.value = c;
+                    datalist.appendChild(option);
+                });
+            }
 
-function onClientSelect() {
-    const name = document.getElementById('client-select').value;
-    const info = document.getElementById('client-info');
-    const btn = document.getElementById('search-btn');
-    
-    if (name && clients[name]) {
-        const client = clients[name];
-        info.innerHTML = `<h4>${client.name}</h4><p><b>Profession:</b> ${client.profession}</p><p><b>Location:</b> ${client.location}</p>`;
-        info.style.display = 'block';
-        btn.disabled = false;
-    } else {
-        info.style.display = 'none';
-        btn.disabled = true;
-    }
-}
+            async function runSearch() {
+                const client = document.getElementById('client').value;
+                const query = document.getElementById('query').value;
+                const res = await fetch(`/api/scrape?client=${encodeURIComponent(client)}&query=${encodeURIComponent(query)}`);
+                const data = await res.json();
 
-async function launchSearch() {
-    const name = document.getElementById('client-select').value;
-    if (!name) return;
-    
-    const btn = document.getElementById('search-btn');
-    const results = document.getElementById('results');
-    const success = document.getElementById('success');
-    
-    btn.disabled = true;
-    btn.textContent = '🔄 Searching...';
-    results.textContent = 'Searching for jobs...';
-    success.style.display = 'none';
-    
-    try {
-        const response = await fetch('/launch-job-search', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({client_name: name})
-        });
-        
-        const data = await response.json();
-        
-        if (data.success) {
-            success.innerHTML = `✅ Found ${data.job_count} jobs! ${data.excel_file ? '<a href="/download/' + encodeURIComponent(data.excel_file) + '">📥 Download Excel</a>' : ''}`;
-            success.style.display = 'block';
-            
-            let html = '';
-            data.jobs.forEach(job => {
-                html += `<div class="job-item"><h4>${job.job_title}</h4><p><b>${job.company_name}</b> - ${job.location}</p><p>${job.salary_range}</p><a href="${job.application_link}" target="_blank">Apply Now</a></div>`;
-            });
-            results.innerHTML = html;
-        } else {
-            results.innerHTML = `❌ Error: ${data.error}`;
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+
+                let html = `<table class="table table-hover mt-4"><thead class="table-dark"><tr><th>Company</th><th>Title</th><th>Apply</th><th>Location</th></tr></thead><tbody>`;
+                data.jobs.forEach(job => {
+                    html += `<tr>
+                                <td>${job.company || ""}</td>
+                                <td>${job.title || ""}</td>
+                                <td><a class="btn btn-sm btn-primary" href="${job.link}" target="_blank">Apply</a></td>
+                                <td>${job.location || ""}</td>
+                             </tr>`;
+                });
+                html += "</tbody></table>";
+                document.getElementById('results').innerHTML = html;
+
+                // Show X-ray string
+                document.getElementById('xray').innerHTML = "<h5>X-Ray Search</h5><div class='xray-box'>" + data.xray + "</div>";
+            }
+
+            async function downloadCSV() {
+                const client = document.getElementById('client').value;
+                if (!client) { alert("Please enter client name"); return; }
+                window.location = '/download?client=' + encodeURIComponent(client);
+            }
+
+            window.onload = loadClients;
+        </script>
+    </head>
+    <body>
+        <div class="hero">
+            <h1>SLRC Job Assist</h1>
+            <p>Smart Job Finder & Client Matching</p>
+        </div>
+        <div class="container mt-4">
+            <div class="card p-4 shadow-sm">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label">Client</label>
+                        <input list="clients" id="client" class="form-control" placeholder="Start typing client name">
+                        <datalist id="clients"></datalist>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Custom Query (optional)</label>
+                        <input id="query" class="form-control" placeholder="Leave blank to auto-use client profession">
+                    </div>
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button onclick="runSearch()" class="btn btn-success w-100">Search</button>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button onclick="downloadCSV()" class="btn btn-warning">Download CSV</button>
+                </div>
+            </div>
+            <div id="results" class="mt-4"></div>
+            <div id="xray" class="mt-4"></div>
+        </div>
+    </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content)
+
+
+# ------------------------
+# STATUS PAGE
+# ------------------------
+@app.get("/status", response_class=HTMLResponse)
+async def status_page():
+    rows = ""
+    for c in clients_data.values():
+        safe_name = c['name'].replace(" ", "_")
+        rows += f"""
+        <div class="col-md-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">{c['name']}</h5>
+                    <p class="card-text">
+                        <strong>Profession:</strong> {c['profession']}<br>
+                        <strong>Location:</strong> {c['location']}<br>
+                        <strong>Scrape Time:</strong> {c['scrape_time']}<br>
+                        <strong>Last Run:</strong> {c['last_run']}<br>
+                        <strong>Jobs Found:</strong> {c['last_count']}
+                    </p>
+                    <a href='/api/run_now?client={safe_name}' class="btn btn-sm btn-primary">Run Now</a>
+                    <a href='/download?client={safe_name}' class="btn btn-sm btn-warning">Download CSV</a>
+                </div>
+            </div>
+        </div>
+        """
+
+    html_content = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Status Page</title>
+        <meta http-equiv="refresh" content="60">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-light">
+        <div class="container py-4">
+            <h1 class="mb-4">Scraper Status</h1>
+            <p>Auto-refresh every 60 seconds</p>
+            <div class="row">
+                {rows}
+            </div>
+        </div>
+    </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content)
+
+
+# ------------------------
+# API ENDPOINTS
+# ------------------------
+@app.get("/api/clients")
+async def api_clients():
+    return list(clients_data.keys())
+
+
+@app.get("/api/scrape")
+async def api_scrape(client: str, query: str = ""):
+    client_info = clients_data.get(client)
+    if not client_info:
+        return JSONResponse(content={"error": "Client not found"}, status_code=404)
+
+    # If query is blank, auto-generate using client profession + location
+    if not query.strip():
+        query = f"{client_info['profession']} jobs {client_info['location']}"
+
+    jobs = run_scraper(query)
+
+    # Save to client-specific CSV
+    safe_name = client_info['name'].replace(" ", "_")
+    filename = os.path.join(RESULTS_DIR, f"{safe_name}.csv")
+
+    df = pd.DataFrame([
+        {
+            "Job Title": job.get("title"),
+            "Company Name": job.get("company"),
+            "Application Weblink": job.get("link"),
+            "Location": job.get("location")
         }
-    } catch (error) {
-        results.innerHTML = `❌ Network error: ${error.message}`;
-    }
-    
-    btn.disabled = false;
-    btn.textContent = '🚀 Launch Job Search';
-}
+        for job in jobs
+    ])
+    df.to_csv(filename, index=False)
 
-loadClients();
-</script>
-</body></html>
-    """)
+    # Update status
+    client_info["last_run"] = pd.Timestamp.now().strftime("%Y-%m-%d %H:%M")
+    client_info["last_count"] = len(jobs)
 
-@app.get("/clients")
-async def get_clients():
-    return JSONResponse({"clients": system_state["clients"], "count": len(system_state["clients"])})
+    # Build X-ray search string
+    company_names = [job["company"] for job in jobs if job.get("company")]
+    xray = f'site:linkedin.com/in ("{client_info["profession"]}") ("{" OR ".join(company_names)}")'
 
-@app.post("/launch-job-search")
-async def launch_job_search(request: Request):
-    try:
-        data = await request.json()
-        client_name = data.get("client_name")
-        
-        if not client_name or client_name not in system_state["clients"]:
-            raise HTTPException(status_code=400, detail="Invalid client")
-        
-        client_data = system_state["clients"][client_name]
-        search_date = datetime.now().isoformat()
-        
-        print(f"🔍 Starting search for {client_name}")
-        jobs = mock_jobs(client_data)
-        excel_file = generate_excel(client_name, jobs, search_date)
-        
-        return JSONResponse({
-            "success": True,
-            "client_name": client_name,
-            "job_count": len(jobs),
-            "jobs": jobs,
-            "excel_file": os.path.basename(excel_file) if excel_file else None
-        })
-    except Exception as e:
-        return JSONResponse({"success": False, "error": str(e)}, status_code=500)
+    return {"jobs": jobs, "count": len(jobs), "query_used": query, "xray": xray}
 
-@app.get("/download/{filename}")
-async def download_file(filename: str):
-    file_path = Path("results") / filename
-    if not file_path.exists():
-        raise HTTPException(status_code=404, detail="File not found")
-    return FileResponse(str(file_path), filename=filename)
 
-if __name__ == "__main__":
-    print("🚀 Starting Job Application Management System...")
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+@app.get("/api/run_now")
+async def run_now(client: str):
+    client = client.replace("_", " ")
+    client_info = clients_data.get(client)
+    if not client_info:
+        return JSONResponse(content={"error": "Client not found"}, status_code=404)
+
+    scheduled_scrape(client_info)
+    return RedirectResponse(url="/status")
+
+
+@app.get("/download")
+async def download_csv(client: str):
+    safe_name = client.replace(" ", "_")
+    filename = os.path.join(RESULTS_DIR, f"{safe_name}.csv")
+    if not os.path.exists(filename):
+        return JSONResponse(content={"error": "No CSV file found for this client"}, status_code=404)
+    return FileResponse(filename, filename=f"{safe_name}.csv", media_type="text/csv")

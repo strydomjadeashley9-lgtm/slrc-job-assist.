@@ -1,20 +1,6 @@
-# Core Framework
 fastapi
 uvicorn[standard]
-
-# CrewAI Multi-Agent System (Latest Available)
-crewai
-
-# HTTP Requests & Environment
+pandas
 requests
 python-dotenv
-
-# Data Processing (for future integrations)
-pandas
-openpyxl
-
-# Airtable Integration
-pyairtable
-
-# Date/Time Handling
-python-dateutil
+apscheduler
