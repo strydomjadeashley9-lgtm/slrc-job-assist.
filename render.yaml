@@ -1,7 +1,18 @@
+
+
 services:
   - type: web
-    name: slrc-job-assist
+    name: crew-job-scraper
     env: python
-    plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    plan: free
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: AIRTABLE_API_KEY
+        sync: false
+      - key: AIRTABLE_BASE_ID
+        sync: false
+      - key: AIRTABLE_CLIENTS_TABLE
+        value: Job%20Seekers

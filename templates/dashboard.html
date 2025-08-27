@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Job Search Assistant</h1>
+      <p>Live job scraping dashboard — New Zealand only 🇳🇿</p>
+    </header>
+
+    <section class="clients">
+      <h2>Clients</h2>
+      <select id="clientSelect" onchange="selectClient(this.value)">
+        <option value="">-- Select Client --</option>
+        {% for client in clients %}
+        <option value="{{ client.name }}">{{ client.name }} ({{ client.profession }})</option>
+        {% endfor %}
+      </select>
+      <button onclick="refreshClients()">🔄 Refresh</button>
+    </section>
+
+    <section class="jobs">
+      <h2>Jobs (<span id="jobCount">0</span>)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Link</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="jobsTable">
+          <tr><td colspan="5">Select a client to load jobs</td></tr>
+        </tbody>
+      </table>
+      <button id="exportBtn" onclick="exportJobs()" disabled>⬇ Export</button>
+    </section>
+
+    <section class="xray" id="xraySection" style="display:none;">
+      <h2>LinkedIn X-Ray Search</h2>
+      <textarea id="xrayQuery" readonly></textarea>
+      <button onclick="copyXray()">📋 Copy</button>
+    </section>
+
+    <section class="logs">
+      <h2>Logs</h2>
+      <pre id="logBox">Loading logs...</pre>
+    </section>
+  </div>
+
+<script>
+let currentClient = null;
+
+async function selectClient(name){
+  if(!name) return;
+  currentClient = name;
+  document.getElementById("jobsTable").innerHTML = "<tr><td colspan=5>Loading...</td></tr>";
+  const res = await fetch(`/search_jobs?client=${encodeURIComponent(name)}`);
+  const data = await res.json();
+  if(data.jobs){
+    document.getElementById("jobCount").innerText = data.count;
+    document.getElementById("exportBtn").disabled = data.count === 0;
+    let rows = "";
+    data.jobs.forEach(j=>{
+      rows += `<tr>
+        <td>${j.company}</td>
+        <td>${j.title}</td>
+        <td>${j.location}</td>
+        <td><a href="${j.link}" target="_blank">Apply</a></td>
+        <td>${j.date}</td>
+      </tr>`;
+    });
+    document.getElementById("jobsTable").innerHTML = rows;
+    if(data.xray){
+      document.getElementById("xraySection").style.display = "block";
+      document.getElementById("xrayQuery").value = data.xray;
+    }
+  }
+}
+
+async function exportJobs(){
+  if(!currentClient) return;
+  window.location.href = `/export/${encodeURIComponent(currentClient)}`;
+}
+
+async function refreshClients(){
+  await fetch("/refresh_clients");
+  window.location.reload();
+}
+
+async function loadLogs(){
+  const res = await fetch("/logs");
+  const data = await res.json();
+  document.getElementById("logBox").innerText = data.logs.join("");
+}
+setInterval(loadLogs, 5000);
+loadLogs();
+
+function copyXray(){
+  const text = document.getElementById("xrayQuery").value;
+  navigator.clipboard.writeText(text);
+  alert("Copied!");
+}
+</script>
+</body>
+</html>

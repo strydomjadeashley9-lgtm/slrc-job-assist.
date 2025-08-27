@@ -2120,3 +2120,294 @@
   }
 }
 2025-08-26 01:10:19.479169 - Found 10 jobs for query: Plumber jobs New Zealand
+2025-08-26 14:47:39.040925 - Running scraper for query: Senior Town Planner
+
+Principal Planner
+
+Team Lead, Planning
+
+Planning Manager
+
+Urban Planner
+
+Policy Planner
+
+Development Manager
+
+Strategic Planner jobs South Africa in New Zealand
+2025-08-26 14:47:40.802969 - Raw API response:
+{
+  "search_metadata": {
+    "id": "68adaceb634a63c604b8b1fb",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/9466eac3e4000c73/68adaceb634a63c604b8b1fb.json",
+    "created_at": "2025-08-26 12:47:39 UTC",
+    "processed_at": "2025-08-26 12:47:39 UTC",
+    "google_jobs_url": "https://www.google.com/search?q=Senior+Town+Planner%0A%0APrincipal+Planner%0A%0ATeam+Lead%2C+Planning%0A%0APlanning+Manager%0A%0AUrban+Planner%0A%0APolicy+Planner%0A%0ADevelopment+Manager%0A%0AStrategic+Planner+jobs+South+Africa+New+Zealand&hl=en&udm=8",
+    "raw_html_file": "https://serpapi.com/searches/9466eac3e4000c73/68adaceb634a63c604b8b1fb.html",
+    "total_time_taken": 1.01
+  },
+  "search_parameters": {
+    "q": "Senior Town Planner\n\nPrincipal Planner\n\nTeam Lead, Planning\n\nPlanning Manager\n\nUrban Planner\n\nPolicy Planner\n\nDevelopment Manager\n\nStrategic Planner jobs South Africa New Zealand",
+    "engine": "google_jobs",
+    "google_domain": "google.com",
+    "hl": "en"
+  },
+  "filters": [
+    {
+      "name": "Date posted",
+      "options": [
+        {
+          "name": "Yesterday",
+          "parameters": {
+            "uds": "AOm0WdH3nBOHpcuX7vGryy9DrhdWqYW3KAMMYTOoEI2yZy9-3RF4Df22SKjQFPNqyRK255PZ9t-BAPllPGEXetynEM11_YWAjO8PoJhx-FwRURC0MMSJG0FLLJRwSrqQDM5Cd9c2PEWRsNHnaVOQxUb-O0TZovP6deRJbUe30RfYlerRM_ixv5HRpZpLkeyE47g5oVUZXzNHAzf6B330XPjllEtrAifHjxI54g_3iznGsW8tptSGbI1sBNtVAyNY18LQzpOsrh6OwXi1XLSUSO4ehqz36xAyMV0qaA-a5gcdaXYFMp05_Pc70GCxny4tEN2_7bDm3_p-LPySB01_vnfHpwTdZcyi6Nc_KHmMHlbPKxXiDK_eqD9P9_1ShVjOUwvgk8piyps0Uq6othZ1cUS0ruXijWZyMI5ndqFsVzpadw1R5yowdMAtu8Yb9YRahOwdQuYAE6r60DgJQaKLN8WU2eTLtEVmj1ltkYwZs_wrrpoHy_pQ1IChAiuISRA_fbw95ch4yldcC9s0lHky9tf5wbOGZDNcBQ",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand since yesterday"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+since+yesterday&uds=AOm0WdH3nBOHpcuX7vGryy9DrhdWqYW3KAMMYTOoEI2yZy9-3RF4Df22SKjQFPNqyRK255PZ9t-BAPllPGEXetynEM11_YWAjO8PoJhx-FwRURC0MMSJG0FLLJRwSrqQDM5Cd9c2PEWRsNHnaVOQxUb-O0TZovP6deRJbUe30RfYlerRM_ixv5HRpZpLkeyE47g5oVUZXzNHAzf6B330XPjllEtrAifHjxI54g_3iznGsW8tptSGbI1sBNtVAyNY18LQzpOsrh6OwXi1XLSUSO4ehqz36xAyMV0qaA-a5gcdaXYFMp05_Pc70GCxny4tEN2_7bDm3_p-LPySB01_vnfHpwTdZcyi6Nc_KHmMHlbPKxXiDK_eqD9P9_1ShVjOUwvgk8piyps0Uq6othZ1cUS0ruXijWZyMI5ndqFsVzpadw1R5yowdMAtu8Yb9YRahOwdQuYAE6r60DgJQaKLN8WU2eTLtEVmj1ltkYwZs_wrrpoHy_pQ1IChAiuISRA_fbw95ch4yldcC9s0lHky9tf5wbOGZDNcBQ&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAC",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+since+yesterday&uds=AOm0WdH3nBOHpcuX7vGryy9DrhdWqYW3KAMMYTOoEI2yZy9-3RF4Df22SKjQFPNqyRK255PZ9t-BAPllPGEXetynEM11_YWAjO8PoJhx-FwRURC0MMSJG0FLLJRwSrqQDM5Cd9c2PEWRsNHnaVOQxUb-O0TZovP6deRJbUe30RfYlerRM_ixv5HRpZpLkeyE47g5oVUZXzNHAzf6B330XPjllEtrAifHjxI54g_3iznGsW8tptSGbI1sBNtVAyNY18LQzpOsrh6OwXi1XLSUSO4ehqz36xAyMV0qaA-a5gcdaXYFMp05_Pc70GCxny4tEN2_7bDm3_p-LPySB01_vnfHpwTdZcyi6Nc_KHmMHlbPKxXiDK_eqD9P9_1ShVjOUwvgk8piyps0Uq6othZ1cUS0ruXijWZyMI5ndqFsVzpadw1R5yowdMAtu8Yb9YRahOwdQuYAE6r60DgJQaKLN8WU2eTLtEVmj1ltkYwZs_wrrpoHy_pQ1IChAiuISRA_fbw95ch4yldcC9s0lHky9tf5wbOGZDNcBQ"
+        },
+        {
+          "name": "Last 3 days",
+          "parameters": {
+            "uds": "AOm0WdG6MvzoWSeBdMXpAlWUC7R4Xt892p-5bsoJFLKUa8PsIUL0DtTSx4zSvVpPMCdJtbAJXu5dGOoryz7uNg8xBH0yRgASR1RAWxdKmrDVI9wZhhGo1ygxwpcuwUvv4dT7vSANNrcpP3w2_4tmGgpnBjbPKx7ZAFTXdqopy0DNn4Qx75btgVZ2fjc4JE6vhm3HPH5slAJdDv-KndNKXVjnKLVI8WBLU_kgr8_W7QeGKYBc7ICuZkzoYiy_v4NvyOP7askbcI3dGze9DsDOsx5bi3cILQpWxBZXy69NuTTLOoixbZ-Hw5KMwp6zMRx9OajV0s53YgH11HPPQcij8EWa9LMg_tmtITInvaNJfK7LofjExQwNPUsitWGO5dJEF6vd3NM9ax-usOFgZPKqqabXx-3tAECALoZ7WHMIityTYTTTAcSy8WQC-5-yqJikvGgqBhdtaqcBYFwhMv5MJzmPfhMui8tzK6yVbHhAaxOZtkbuRJPPCo6tLPEQc7Q9B7ibK9CY_oSAfUqwplbuO71OiHT76KyR8Q",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand in the last 3 days"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+3+days&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4Xt892p-5bsoJFLKUa8PsIUL0DtTSx4zSvVpPMCdJtbAJXu5dGOoryz7uNg8xBH0yRgASR1RAWxdKmrDVI9wZhhGo1ygxwpcuwUvv4dT7vSANNrcpP3w2_4tmGgpnBjbPKx7ZAFTXdqopy0DNn4Qx75btgVZ2fjc4JE6vhm3HPH5slAJdDv-KndNKXVjnKLVI8WBLU_kgr8_W7QeGKYBc7ICuZkzoYiy_v4NvyOP7askbcI3dGze9DsDOsx5bi3cILQpWxBZXy69NuTTLOoixbZ-Hw5KMwp6zMRx9OajV0s53YgH11HPPQcij8EWa9LMg_tmtITInvaNJfK7LofjExQwNPUsitWGO5dJEF6vd3NM9ax-usOFgZPKqqabXx-3tAECALoZ7WHMIityTYTTTAcSy8WQC-5-yqJikvGgqBhdtaqcBYFwhMv5MJzmPfhMui8tzK6yVbHhAaxOZtkbuRJPPCo6tLPEQc7Q9B7ibK9CY_oSAfUqwplbuO71OiHT76KyR8Q&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAD",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+3+days&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4Xt892p-5bsoJFLKUa8PsIUL0DtTSx4zSvVpPMCdJtbAJXu5dGOoryz7uNg8xBH0yRgASR1RAWxdKmrDVI9wZhhGo1ygxwpcuwUvv4dT7vSANNrcpP3w2_4tmGgpnBjbPKx7ZAFTXdqopy0DNn4Qx75btgVZ2fjc4JE6vhm3HPH5slAJdDv-KndNKXVjnKLVI8WBLU_kgr8_W7QeGKYBc7ICuZkzoYiy_v4NvyOP7askbcI3dGze9DsDOsx5bi3cILQpWxBZXy69NuTTLOoixbZ-Hw5KMwp6zMRx9OajV0s53YgH11HPPQcij8EWa9LMg_tmtITInvaNJfK7LofjExQwNPUsitWGO5dJEF6vd3NM9ax-usOFgZPKqqabXx-3tAECALoZ7WHMIityTYTTTAcSy8WQC-5-yqJikvGgqBhdtaqcBYFwhMv5MJzmPfhMui8tzK6yVbHhAaxOZtkbuRJPPCo6tLPEQc7Q9B7ibK9CY_oSAfUqwplbuO71OiHT76KyR8Q"
+        },
+        {
+          "name": "Last week",
+          "parameters": {
+            "uds": "AOm0WdHCYuUl_HjJy6Pxz5EG0PYvB2nRHlddvurFklOAmWadBKkzdtgIHcFYBLt-ltVMyl0pWA5kEpzhDa7nsqQ4hMgcI9x-Ayw_LmKkz6-H2HmWWqDzo1aQ8RYANfn45gUcuQvP_T4BfiHWZxBXCQXammOmI-uN3mT6nfLv09el5kOGb3FJoyDVgWasrqwRJDDUqMULFCYb8JmxQ71tbX9JAYPnpZhvjyeig6X5qeaLHChumlMa-ESVAsB-GClduxxBecUstr40G2TG5HYwBzL-w1DjmRWQ0TxWJ6jo2RB9zSMm_ie_GWrPX-Sycxj1y6bC-V-ZY2D7oKuarsckZAre1RYg80qWXlKar562rcCyBSGWz-njVXVZCkMCcWpWJQI0U-CZlYg5as8a8E6sKve53fbbgKkDLuR7QhZ2nwG37PM6XBBing5_vUTpr4XvyWepNbAn6YbwLFrP-iwpQB50PA1ymJ3LmbNm596_AemZHog1cnPZOud-P18I5yopfXhwFwKAo8RtsY68bO8SzD86jKvQ4DBwj6-EKtOB8x809RIPrvFLAuI",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand in the last week"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+week&uds=AOm0WdHCYuUl_HjJy6Pxz5EG0PYvB2nRHlddvurFklOAmWadBKkzdtgIHcFYBLt-ltVMyl0pWA5kEpzhDa7nsqQ4hMgcI9x-Ayw_LmKkz6-H2HmWWqDzo1aQ8RYANfn45gUcuQvP_T4BfiHWZxBXCQXammOmI-uN3mT6nfLv09el5kOGb3FJoyDVgWasrqwRJDDUqMULFCYb8JmxQ71tbX9JAYPnpZhvjyeig6X5qeaLHChumlMa-ESVAsB-GClduxxBecUstr40G2TG5HYwBzL-w1DjmRWQ0TxWJ6jo2RB9zSMm_ie_GWrPX-Sycxj1y6bC-V-ZY2D7oKuarsckZAre1RYg80qWXlKar562rcCyBSGWz-njVXVZCkMCcWpWJQI0U-CZlYg5as8a8E6sKve53fbbgKkDLuR7QhZ2nwG37PM6XBBing5_vUTpr4XvyWepNbAn6YbwLFrP-iwpQB50PA1ymJ3LmbNm596_AemZHog1cnPZOud-P18I5yopfXhwFwKAo8RtsY68bO8SzD86jKvQ4DBwj6-EKtOB8x809RIPrvFLAuI&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAE",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+week&uds=AOm0WdHCYuUl_HjJy6Pxz5EG0PYvB2nRHlddvurFklOAmWadBKkzdtgIHcFYBLt-ltVMyl0pWA5kEpzhDa7nsqQ4hMgcI9x-Ayw_LmKkz6-H2HmWWqDzo1aQ8RYANfn45gUcuQvP_T4BfiHWZxBXCQXammOmI-uN3mT6nfLv09el5kOGb3FJoyDVgWasrqwRJDDUqMULFCYb8JmxQ71tbX9JAYPnpZhvjyeig6X5qeaLHChumlMa-ESVAsB-GClduxxBecUstr40G2TG5HYwBzL-w1DjmRWQ0TxWJ6jo2RB9zSMm_ie_GWrPX-Sycxj1y6bC-V-ZY2D7oKuarsckZAre1RYg80qWXlKar562rcCyBSGWz-njVXVZCkMCcWpWJQI0U-CZlYg5as8a8E6sKve53fbbgKkDLuR7QhZ2nwG37PM6XBBing5_vUTpr4XvyWepNbAn6YbwLFrP-iwpQB50PA1ymJ3LmbNm596_AemZHog1cnPZOud-P18I5yopfXhwFwKAo8RtsY68bO8SzD86jKvQ4DBwj6-EKtOB8x809RIPrvFLAuI"
+        },
+        {
+          "name": "Last month",
+          "parameters": {
+            "uds": "AOm0WdG6MvzoWSeBdMXpAlWUC7R4ZCNkAR9TqmILKz8dRP3K623F5Rp2hUiIhxxyBkFkwkLs5gk4V2n8j7V0IEQXh7tHXQ47xZR_KJ6-tXBGQ4w32CdGFWPJ2qRPFbS3-Dz_bwAOujmSXBWozjvlcVj4GizSKeHuLAbLjDJaiQjWrmw8Vk886WtdAPuEx4HKdNy3JGGJFPybX-EwS3CdXqPnQzv5n_hjXMkqQFU2ATh4zKPfyt25siIQAho6Cl6OVp3-inMy92r03tsxdvzqx5rBIBDssCa6SYri6cnklP7RuI5zlLU_PkrGirdhZfXP85YwtoZp2dIMvgAjVR2-LQR959Ta5KLP0juXSlqcNIh9ndM3yOGk-nJlKfNW8HS8cDsXo7jURRe66pQnVrlXvjStlQOonJI8_YmKjrMkn9UjDlqWvFKqBic_H17lms9YaO-dxoA4bYPByCHkzAIEYgx6ivtQ6ZGl9FLJjnr66MO_gOi9rmo8ZNaoSGKtvBj3nE3dyfGpDeOHuq3iMDZiZb85vQacemax6NG9ShIRGuL0o5F0SOcpbU4",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand in the last month"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+month&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4ZCNkAR9TqmILKz8dRP3K623F5Rp2hUiIhxxyBkFkwkLs5gk4V2n8j7V0IEQXh7tHXQ47xZR_KJ6-tXBGQ4w32CdGFWPJ2qRPFbS3-Dz_bwAOujmSXBWozjvlcVj4GizSKeHuLAbLjDJaiQjWrmw8Vk886WtdAPuEx4HKdNy3JGGJFPybX-EwS3CdXqPnQzv5n_hjXMkqQFU2ATh4zKPfyt25siIQAho6Cl6OVp3-inMy92r03tsxdvzqx5rBIBDssCa6SYri6cnklP7RuI5zlLU_PkrGirdhZfXP85YwtoZp2dIMvgAjVR2-LQR959Ta5KLP0juXSlqcNIh9ndM3yOGk-nJlKfNW8HS8cDsXo7jURRe66pQnVrlXvjStlQOonJI8_YmKjrMkn9UjDlqWvFKqBic_H17lms9YaO-dxoA4bYPByCHkzAIEYgx6ivtQ6ZGl9FLJjnr66MO_gOi9rmo8ZNaoSGKtvBj3nE3dyfGpDeOHuq3iMDZiZb85vQacemax6NG9ShIRGuL0o5F0SOcpbU4&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAF",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+month&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4ZCNkAR9TqmILKz8dRP3K623F5Rp2hUiIhxxyBkFkwkLs5gk4V2n8j7V0IEQXh7tHXQ47xZR_KJ6-tXBGQ4w32CdGFWPJ2qRPFbS3-Dz_bwAOujmSXBWozjvlcVj4GizSKeHuLAbLjDJaiQjWrmw8Vk886WtdAPuEx4HKdNy3JGGJFPybX-EwS3CdXqPnQzv5n_hjXMkqQFU2ATh4zKPfyt25siIQAho6Cl6OVp3-inMy92r03tsxdvzqx5rBIBDssCa6SYri6cnklP7RuI5zlLU_PkrGirdhZfXP85YwtoZp2dIMvgAjVR2-LQR959Ta5KLP0juXSlqcNIh9ndM3yOGk-nJlKfNW8HS8cDsXo7jURRe66pQnVrlXvjStlQOonJI8_YmKjrMkn9UjDlqWvFKqBic_H17lms9YaO-dxoA4bYPByCHkzAIEYgx6ivtQ6ZGl9FLJjnr66MO_gOi9rmo8ZNaoSGKtvBj3nE3dyfGpDeOHuq3iMDZiZb85vQacemax6NG9ShIRGuL0o5F0SOcpbU4"
+        }
+      ]
+    },
+    {
+      "name": "Date posted",
+      "options": [
+        {
+          "name": "Yesterday",
+          "parameters": {
+            "uds": "AOm0WdH3nBOHpcuX7vGryy9DrhdWqYW3KAMMYTOoEI2yZy9-3RF4Df22SKjQFPNqyRK255PZ9t-BAPllPGEXetynEM11_YWAjO8PoJhx-FwRURC0MMSJG0FLLJRwSrqQDM5Cd9c2PEWRsNHnaVOQxUb-O0TZovP6deRJbUe30RfYlerRM_ixv5HRpZpLkeyE47g5oVUZXzNHAzf6B330XPjllEtrAifHjxI54g_3iznGsW8tptSGbI1sBNtVAyNY18LQzpOsrh6OwXi1XLSUSO4ehqz36xAyMV0qaA-a5gcdaXYFMp05_Pc70GCxny4tEN2_7bDm3_p-LPySB01_vnfHpwTdZcyi6Nc_KHmMHlbPKxXiDK_eqD9P9_1ShVjOUwvgk8piyps0Uq6othZ1cUS0ruXijWZyMI5ndqFsVzpadw1R5yowdMAtu8Yb9YRahOwdQuYAE6r60DgJQaKLN8WU2eTLtEVmj1ltkYwZs_wrrpoHy_pQ1IChAiuISRA_fbw95ch4yldcC9s0lHky9tf5wbOGZDNcBQ",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand since yesterday"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+since+yesterday&uds=AOm0WdH3nBOHpcuX7vGryy9DrhdWqYW3KAMMYTOoEI2yZy9-3RF4Df22SKjQFPNqyRK255PZ9t-BAPllPGEXetynEM11_YWAjO8PoJhx-FwRURC0MMSJG0FLLJRwSrqQDM5Cd9c2PEWRsNHnaVOQxUb-O0TZovP6deRJbUe30RfYlerRM_ixv5HRpZpLkeyE47g5oVUZXzNHAzf6B330XPjllEtrAifHjxI54g_3iznGsW8tptSGbI1sBNtVAyNY18LQzpOsrh6OwXi1XLSUSO4ehqz36xAyMV0qaA-a5gcdaXYFMp05_Pc70GCxny4tEN2_7bDm3_p-LPySB01_vnfHpwTdZcyi6Nc_KHmMHlbPKxXiDK_eqD9P9_1ShVjOUwvgk8piyps0Uq6othZ1cUS0ruXijWZyMI5ndqFsVzpadw1R5yowdMAtu8Yb9YRahOwdQuYAE6r60DgJQaKLN8WU2eTLtEVmj1ltkYwZs_wrrpoHy_pQ1IChAiuISRA_fbw95ch4yldcC9s0lHky9tf5wbOGZDNcBQ&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAC",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+since+yesterday&uds=AOm0WdH3nBOHpcuX7vGryy9DrhdWqYW3KAMMYTOoEI2yZy9-3RF4Df22SKjQFPNqyRK255PZ9t-BAPllPGEXetynEM11_YWAjO8PoJhx-FwRURC0MMSJG0FLLJRwSrqQDM5Cd9c2PEWRsNHnaVOQxUb-O0TZovP6deRJbUe30RfYlerRM_ixv5HRpZpLkeyE47g5oVUZXzNHAzf6B330XPjllEtrAifHjxI54g_3iznGsW8tptSGbI1sBNtVAyNY18LQzpOsrh6OwXi1XLSUSO4ehqz36xAyMV0qaA-a5gcdaXYFMp05_Pc70GCxny4tEN2_7bDm3_p-LPySB01_vnfHpwTdZcyi6Nc_KHmMHlbPKxXiDK_eqD9P9_1ShVjOUwvgk8piyps0Uq6othZ1cUS0ruXijWZyMI5ndqFsVzpadw1R5yowdMAtu8Yb9YRahOwdQuYAE6r60DgJQaKLN8WU2eTLtEVmj1ltkYwZs_wrrpoHy_pQ1IChAiuISRA_fbw95ch4yldcC9s0lHky9tf5wbOGZDNcBQ"
+        },
+        {
+          "name": "Last 3 days",
+          "parameters": {
+            "uds": "AOm0WdG6MvzoWSeBdMXpAlWUC7R4Xt892p-5bsoJFLKUa8PsIUL0DtTSx4zSvVpPMCdJtbAJXu5dGOoryz7uNg8xBH0yRgASR1RAWxdKmrDVI9wZhhGo1ygxwpcuwUvv4dT7vSANNrcpP3w2_4tmGgpnBjbPKx7ZAFTXdqopy0DNn4Qx75btgVZ2fjc4JE6vhm3HPH5slAJdDv-KndNKXVjnKLVI8WBLU_kgr8_W7QeGKYBc7ICuZkzoYiy_v4NvyOP7askbcI3dGze9DsDOsx5bi3cILQpWxBZXy69NuTTLOoixbZ-Hw5KMwp6zMRx9OajV0s53YgH11HPPQcij8EWa9LMg_tmtITInvaNJfK7LofjExQwNPUsitWGO5dJEF6vd3NM9ax-usOFgZPKqqabXx-3tAECALoZ7WHMIityTYTTTAcSy8WQC-5-yqJikvGgqBhdtaqcBYFwhMv5MJzmPfhMui8tzK6yVbHhAaxOZtkbuRJPPCo6tLPEQc7Q9B7ibK9CY_oSAfUqwplbuO71OiHT76KyR8Q",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand in the last 3 days"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+3+days&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4Xt892p-5bsoJFLKUa8PsIUL0DtTSx4zSvVpPMCdJtbAJXu5dGOoryz7uNg8xBH0yRgASR1RAWxdKmrDVI9wZhhGo1ygxwpcuwUvv4dT7vSANNrcpP3w2_4tmGgpnBjbPKx7ZAFTXdqopy0DNn4Qx75btgVZ2fjc4JE6vhm3HPH5slAJdDv-KndNKXVjnKLVI8WBLU_kgr8_W7QeGKYBc7ICuZkzoYiy_v4NvyOP7askbcI3dGze9DsDOsx5bi3cILQpWxBZXy69NuTTLOoixbZ-Hw5KMwp6zMRx9OajV0s53YgH11HPPQcij8EWa9LMg_tmtITInvaNJfK7LofjExQwNPUsitWGO5dJEF6vd3NM9ax-usOFgZPKqqabXx-3tAECALoZ7WHMIityTYTTTAcSy8WQC-5-yqJikvGgqBhdtaqcBYFwhMv5MJzmPfhMui8tzK6yVbHhAaxOZtkbuRJPPCo6tLPEQc7Q9B7ibK9CY_oSAfUqwplbuO71OiHT76KyR8Q&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAD",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+3+days&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4Xt892p-5bsoJFLKUa8PsIUL0DtTSx4zSvVpPMCdJtbAJXu5dGOoryz7uNg8xBH0yRgASR1RAWxdKmrDVI9wZhhGo1ygxwpcuwUvv4dT7vSANNrcpP3w2_4tmGgpnBjbPKx7ZAFTXdqopy0DNn4Qx75btgVZ2fjc4JE6vhm3HPH5slAJdDv-KndNKXVjnKLVI8WBLU_kgr8_W7QeGKYBc7ICuZkzoYiy_v4NvyOP7askbcI3dGze9DsDOsx5bi3cILQpWxBZXy69NuTTLOoixbZ-Hw5KMwp6zMRx9OajV0s53YgH11HPPQcij8EWa9LMg_tmtITInvaNJfK7LofjExQwNPUsitWGO5dJEF6vd3NM9ax-usOFgZPKqqabXx-3tAECALoZ7WHMIityTYTTTAcSy8WQC-5-yqJikvGgqBhdtaqcBYFwhMv5MJzmPfhMui8tzK6yVbHhAaxOZtkbuRJPPCo6tLPEQc7Q9B7ibK9CY_oSAfUqwplbuO71OiHT76KyR8Q"
+        },
+        {
+          "name": "Last week",
+          "parameters": {
+            "uds": "AOm0WdHCYuUl_HjJy6Pxz5EG0PYvB2nRHlddvurFklOAmWadBKkzdtgIHcFYBLt-ltVMyl0pWA5kEpzhDa7nsqQ4hMgcI9x-Ayw_LmKkz6-H2HmWWqDzo1aQ8RYANfn45gUcuQvP_T4BfiHWZxBXCQXammOmI-uN3mT6nfLv09el5kOGb3FJoyDVgWasrqwRJDDUqMULFCYb8JmxQ71tbX9JAYPnpZhvjyeig6X5qeaLHChumlMa-ESVAsB-GClduxxBecUstr40G2TG5HYwBzL-w1DjmRWQ0TxWJ6jo2RB9zSMm_ie_GWrPX-Sycxj1y6bC-V-ZY2D7oKuarsckZAre1RYg80qWXlKar562rcCyBSGWz-njVXVZCkMCcWpWJQI0U-CZlYg5as8a8E6sKve53fbbgKkDLuR7QhZ2nwG37PM6XBBing5_vUTpr4XvyWepNbAn6YbwLFrP-iwpQB50PA1ymJ3LmbNm596_AemZHog1cnPZOud-P18I5yopfXhwFwKAo8RtsY68bO8SzD86jKvQ4DBwj6-EKtOB8x809RIPrvFLAuI",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand in the last week"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+week&uds=AOm0WdHCYuUl_HjJy6Pxz5EG0PYvB2nRHlddvurFklOAmWadBKkzdtgIHcFYBLt-ltVMyl0pWA5kEpzhDa7nsqQ4hMgcI9x-Ayw_LmKkz6-H2HmWWqDzo1aQ8RYANfn45gUcuQvP_T4BfiHWZxBXCQXammOmI-uN3mT6nfLv09el5kOGb3FJoyDVgWasrqwRJDDUqMULFCYb8JmxQ71tbX9JAYPnpZhvjyeig6X5qeaLHChumlMa-ESVAsB-GClduxxBecUstr40G2TG5HYwBzL-w1DjmRWQ0TxWJ6jo2RB9zSMm_ie_GWrPX-Sycxj1y6bC-V-ZY2D7oKuarsckZAre1RYg80qWXlKar562rcCyBSGWz-njVXVZCkMCcWpWJQI0U-CZlYg5as8a8E6sKve53fbbgKkDLuR7QhZ2nwG37PM6XBBing5_vUTpr4XvyWepNbAn6YbwLFrP-iwpQB50PA1ymJ3LmbNm596_AemZHog1cnPZOud-P18I5yopfXhwFwKAo8RtsY68bO8SzD86jKvQ4DBwj6-EKtOB8x809RIPrvFLAuI&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAE",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+week&uds=AOm0WdHCYuUl_HjJy6Pxz5EG0PYvB2nRHlddvurFklOAmWadBKkzdtgIHcFYBLt-ltVMyl0pWA5kEpzhDa7nsqQ4hMgcI9x-Ayw_LmKkz6-H2HmWWqDzo1aQ8RYANfn45gUcuQvP_T4BfiHWZxBXCQXammOmI-uN3mT6nfLv09el5kOGb3FJoyDVgWasrqwRJDDUqMULFCYb8JmxQ71tbX9JAYPnpZhvjyeig6X5qeaLHChumlMa-ESVAsB-GClduxxBecUstr40G2TG5HYwBzL-w1DjmRWQ0TxWJ6jo2RB9zSMm_ie_GWrPX-Sycxj1y6bC-V-ZY2D7oKuarsckZAre1RYg80qWXlKar562rcCyBSGWz-njVXVZCkMCcWpWJQI0U-CZlYg5as8a8E6sKve53fbbgKkDLuR7QhZ2nwG37PM6XBBing5_vUTpr4XvyWepNbAn6YbwLFrP-iwpQB50PA1ymJ3LmbNm596_AemZHog1cnPZOud-P18I5yopfXhwFwKAo8RtsY68bO8SzD86jKvQ4DBwj6-EKtOB8x809RIPrvFLAuI"
+        },
+        {
+          "name": "Last month",
+          "parameters": {
+            "uds": "AOm0WdG6MvzoWSeBdMXpAlWUC7R4ZCNkAR9TqmILKz8dRP3K623F5Rp2hUiIhxxyBkFkwkLs5gk4V2n8j7V0IEQXh7tHXQ47xZR_KJ6-tXBGQ4w32CdGFWPJ2qRPFbS3-Dz_bwAOujmSXBWozjvlcVj4GizSKeHuLAbLjDJaiQjWrmw8Vk886WtdAPuEx4HKdNy3JGGJFPybX-EwS3CdXqPnQzv5n_hjXMkqQFU2ATh4zKPfyt25siIQAho6Cl6OVp3-inMy92r03tsxdvzqx5rBIBDssCa6SYri6cnklP7RuI5zlLU_PkrGirdhZfXP85YwtoZp2dIMvgAjVR2-LQR959Ta5KLP0juXSlqcNIh9ndM3yOGk-nJlKfNW8HS8cDsXo7jURRe66pQnVrlXvjStlQOonJI8_YmKjrMkn9UjDlqWvFKqBic_H17lms9YaO-dxoA4bYPByCHkzAIEYgx6ivtQ6ZGl9FLJjnr66MO_gOi9rmo8ZNaoSGKtvBj3nE3dyfGpDeOHuq3iMDZiZb85vQacemax6NG9ShIRGuL0o5F0SOcpbU4",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand in the last month"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+month&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4ZCNkAR9TqmILKz8dRP3K623F5Rp2hUiIhxxyBkFkwkLs5gk4V2n8j7V0IEQXh7tHXQ47xZR_KJ6-tXBGQ4w32CdGFWPJ2qRPFbS3-Dz_bwAOujmSXBWozjvlcVj4GizSKeHuLAbLjDJaiQjWrmw8Vk886WtdAPuEx4HKdNy3JGGJFPybX-EwS3CdXqPnQzv5n_hjXMkqQFU2ATh4zKPfyt25siIQAho6Cl6OVp3-inMy92r03tsxdvzqx5rBIBDssCa6SYri6cnklP7RuI5zlLU_PkrGirdhZfXP85YwtoZp2dIMvgAjVR2-LQR959Ta5KLP0juXSlqcNIh9ndM3yOGk-nJlKfNW8HS8cDsXo7jURRe66pQnVrlXvjStlQOonJI8_YmKjrMkn9UjDlqWvFKqBic_H17lms9YaO-dxoA4bYPByCHkzAIEYgx6ivtQ6ZGl9FLJjnr66MO_gOi9rmo8ZNaoSGKtvBj3nE3dyfGpDeOHuq3iMDZiZb85vQacemax6NG9ShIRGuL0o5F0SOcpbU4&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIEhAF",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+in+the+last+month&uds=AOm0WdG6MvzoWSeBdMXpAlWUC7R4ZCNkAR9TqmILKz8dRP3K623F5Rp2hUiIhxxyBkFkwkLs5gk4V2n8j7V0IEQXh7tHXQ47xZR_KJ6-tXBGQ4w32CdGFWPJ2qRPFbS3-Dz_bwAOujmSXBWozjvlcVj4GizSKeHuLAbLjDJaiQjWrmw8Vk886WtdAPuEx4HKdNy3JGGJFPybX-EwS3CdXqPnQzv5n_hjXMkqQFU2ATh4zKPfyt25siIQAho6Cl6OVp3-inMy92r03tsxdvzqx5rBIBDssCa6SYri6cnklP7RuI5zlLU_PkrGirdhZfXP85YwtoZp2dIMvgAjVR2-LQR959Ta5KLP0juXSlqcNIh9ndM3yOGk-nJlKfNW8HS8cDsXo7jURRe66pQnVrlXvjStlQOonJI8_YmKjrMkn9UjDlqWvFKqBic_H17lms9YaO-dxoA4bYPByCHkzAIEYgx6ivtQ6ZGl9FLJjnr66MO_gOi9rmo8ZNaoSGKtvBj3nE3dyfGpDeOHuq3iMDZiZb85vQacemax6NG9ShIRGuL0o5F0SOcpbU4"
+        }
+      ]
+    },
+    {
+      "name": "Job type",
+      "options": [
+        {
+          "name": "Full time",
+          "parameters": {
+            "uds": "AOm0WdH9dlZHOwVi0Qx0dNjt8ym5DjyyRSpw0xWPekmwFgVm3fUXuPb8AmPS2VHjNphSkojKcYXsmZww1URDhEvJVOmMVjLYG2JVL3UAVzRBomeXonA_dmpYiccZLpSx2zmVdOCgGnZvGi5PcCrJdE4HQsbYpAaCdb_-HFODVu_MSLyTC09V0fVJGt_aecj8712FAWrjmjXEpRMKgZFeS6zbbk_-npnKYf58pcqDn4DhmEYRMIKb5gVaJTF0ldOZy_uawIjMOg4q8UU5FIgBBhhSRUfnM6sW0I_U5nsmrHxeE-JswdUmhtpEpkkSAYQhGKlZj2rkcx2Elg_DXwmnN_zsiT32Y157MWTImTDufdDAlAAQSCN59axCXhkudg0Ejjehwi56HAHinSIspPDG97iqdlkY-RAIzT6OjYdgRtcLo12CFSbNwW09bLrTxgWsASObrc0bck9gnCh12zCD338sSTrRZkP_dunk_lzxxIGfrhOvUQJ_vr0f-AjhgnKBslEFa6T7NW693lhMVLdb83mfo7AHCmk1tA",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand full time"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+full+time&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5DjyyRSpw0xWPekmwFgVm3fUXuPb8AmPS2VHjNphSkojKcYXsmZww1URDhEvJVOmMVjLYG2JVL3UAVzRBomeXonA_dmpYiccZLpSx2zmVdOCgGnZvGi5PcCrJdE4HQsbYpAaCdb_-HFODVu_MSLyTC09V0fVJGt_aecj8712FAWrjmjXEpRMKgZFeS6zbbk_-npnKYf58pcqDn4DhmEYRMIKb5gVaJTF0ldOZy_uawIjMOg4q8UU5FIgBBhhSRUfnM6sW0I_U5nsmrHxeE-JswdUmhtpEpkkSAYQhGKlZj2rkcx2Elg_DXwmnN_zsiT32Y157MWTImTDufdDAlAAQSCN59axCXhkudg0Ejjehwi56HAHinSIspPDG97iqdlkY-RAIzT6OjYdgRtcLo12CFSbNwW09bLrTxgWsASObrc0bck9gnCh12zCD338sSTrRZkP_dunk_lzxxIGfrhOvUQJ_vr0f-AjhgnKBslEFa6T7NW693lhMVLdb83mfo7AHCmk1tA&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAC",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+full+time&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5DjyyRSpw0xWPekmwFgVm3fUXuPb8AmPS2VHjNphSkojKcYXsmZww1URDhEvJVOmMVjLYG2JVL3UAVzRBomeXonA_dmpYiccZLpSx2zmVdOCgGnZvGi5PcCrJdE4HQsbYpAaCdb_-HFODVu_MSLyTC09V0fVJGt_aecj8712FAWrjmjXEpRMKgZFeS6zbbk_-npnKYf58pcqDn4DhmEYRMIKb5gVaJTF0ldOZy_uawIjMOg4q8UU5FIgBBhhSRUfnM6sW0I_U5nsmrHxeE-JswdUmhtpEpkkSAYQhGKlZj2rkcx2Elg_DXwmnN_zsiT32Y157MWTImTDufdDAlAAQSCN59axCXhkudg0Ejjehwi56HAHinSIspPDG97iqdlkY-RAIzT6OjYdgRtcLo12CFSbNwW09bLrTxgWsASObrc0bck9gnCh12zCD338sSTrRZkP_dunk_lzxxIGfrhOvUQJ_vr0f-AjhgnKBslEFa6T7NW693lhMVLdb83mfo7AHCmk1tA"
+        },
+        {
+          "name": "Part time",
+          "parameters": {
+            "uds": "AOm0WdEx6z2mIEOxVBIwUD8AJ_3YCKavmllkNaHyqVOszzbpUiKT5vRac2Di-oK-_k5xt8fmKuztihxuUWXqAN5Ot6W1DAbdA-3T9PCOCxqmbGAqlp-_WnZMhQbRtkZxR_OSgtdGz3MikONayRkqYPEbRrDTkbhfuQWfGQkHtIXaU6nSrKdBy_LEjockhWmHUQIlDCr461pD12abIblwm_Tl9RHTuwYZ_bWtn3Lc9ippCVzuBaOjcPc6_2Ebrb0u4mwNFztpO5aJuemANIegFUUTBeVABmr0js41ileaf8kJ5pMplEo6cwysVmKZ4x-NPtHIRSI3JElt1HBpJBgMzmybbwsp0JZHyuz90cVtz42XM_NGMRNgGH5xj4s8IMpYzWu_Gs_ovEiYi1Oiiu0FXVR0EFdCNiP3dEqCB7n7ANOeG_AeSINME8P_dcl8uiymTNj77IHgpzVlO9wkx4HG36XwtmuGQgtigJaKDVLaxPZK5YzUeo40ad62nA3kYoHCOPlfVPCp_4xAj5dM02PgaHOzCQ-zzYxGVw",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand part time"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+part+time&uds=AOm0WdEx6z2mIEOxVBIwUD8AJ_3YCKavmllkNaHyqVOszzbpUiKT5vRac2Di-oK-_k5xt8fmKuztihxuUWXqAN5Ot6W1DAbdA-3T9PCOCxqmbGAqlp-_WnZMhQbRtkZxR_OSgtdGz3MikONayRkqYPEbRrDTkbhfuQWfGQkHtIXaU6nSrKdBy_LEjockhWmHUQIlDCr461pD12abIblwm_Tl9RHTuwYZ_bWtn3Lc9ippCVzuBaOjcPc6_2Ebrb0u4mwNFztpO5aJuemANIegFUUTBeVABmr0js41ileaf8kJ5pMplEo6cwysVmKZ4x-NPtHIRSI3JElt1HBpJBgMzmybbwsp0JZHyuz90cVtz42XM_NGMRNgGH5xj4s8IMpYzWu_Gs_ovEiYi1Oiiu0FXVR0EFdCNiP3dEqCB7n7ANOeG_AeSINME8P_dcl8uiymTNj77IHgpzVlO9wkx4HG36XwtmuGQgtigJaKDVLaxPZK5YzUeo40ad62nA3kYoHCOPlfVPCp_4xAj5dM02PgaHOzCQ-zzYxGVw&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAD",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+part+time&uds=AOm0WdEx6z2mIEOxVBIwUD8AJ_3YCKavmllkNaHyqVOszzbpUiKT5vRac2Di-oK-_k5xt8fmKuztihxuUWXqAN5Ot6W1DAbdA-3T9PCOCxqmbGAqlp-_WnZMhQbRtkZxR_OSgtdGz3MikONayRkqYPEbRrDTkbhfuQWfGQkHtIXaU6nSrKdBy_LEjockhWmHUQIlDCr461pD12abIblwm_Tl9RHTuwYZ_bWtn3Lc9ippCVzuBaOjcPc6_2Ebrb0u4mwNFztpO5aJuemANIegFUUTBeVABmr0js41ileaf8kJ5pMplEo6cwysVmKZ4x-NPtHIRSI3JElt1HBpJBgMzmybbwsp0JZHyuz90cVtz42XM_NGMRNgGH5xj4s8IMpYzWu_Gs_ovEiYi1Oiiu0FXVR0EFdCNiP3dEqCB7n7ANOeG_AeSINME8P_dcl8uiymTNj77IHgpzVlO9wkx4HG36XwtmuGQgtigJaKDVLaxPZK5YzUeo40ad62nA3kYoHCOPlfVPCp_4xAj5dM02PgaHOzCQ-zzYxGVw"
+        },
+        {
+          "name": "Contract",
+          "parameters": {
+            "uds": "AOm0WdH9dlZHOwVi0Qx0dNjt8ym5l0Vvnyquao2G9nHwbzYR-QEp9V7AzUm9yM6qdpc8pDp9AOMUviQcdeDagYpVP8bg044Z-scdv1EyIRjVimTE3M3otBMn-JRsKxeW1r4_7Z6rgwpb7zSUZfyXYXWW3ghd2NQNCVNtIPOyTfqESXlD4rXioAS_yxb3BnarTY--1HF9KEZMXBA757qSQPH00N0Vj42qwoesyhQjLIAEYoU8pvK1rp_NTmCqmRuTOrYN0iw_ISRhGkzasrjwjbaBcVFGVSmc-zNFe5PR35kApbKzewsABMJDq5qit8ZqpoShSvFKC0Y2lJfCX4syM9W-65uZ5FzrZlflWVyfUpdRzq3MsWvWjT5f6r90g_3ZYj0xwyhNyX38QccLsDHKOVMrzX_3F7h5ELIrgCXmTgsMvyM0_Z6MNRnXnIlK8xt3j0pXGmL7CIqCvzQGX7vbjkwHK2DxtqoDEC5ulOgTK4tfcQhfyhxnxuO2DPSARZcffSEqqF9BkFVt",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand contract"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+contract&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5l0Vvnyquao2G9nHwbzYR-QEp9V7AzUm9yM6qdpc8pDp9AOMUviQcdeDagYpVP8bg044Z-scdv1EyIRjVimTE3M3otBMn-JRsKxeW1r4_7Z6rgwpb7zSUZfyXYXWW3ghd2NQNCVNtIPOyTfqESXlD4rXioAS_yxb3BnarTY--1HF9KEZMXBA757qSQPH00N0Vj42qwoesyhQjLIAEYoU8pvK1rp_NTmCqmRuTOrYN0iw_ISRhGkzasrjwjbaBcVFGVSmc-zNFe5PR35kApbKzewsABMJDq5qit8ZqpoShSvFKC0Y2lJfCX4syM9W-65uZ5FzrZlflWVyfUpdRzq3MsWvWjT5f6r90g_3ZYj0xwyhNyX38QccLsDHKOVMrzX_3F7h5ELIrgCXmTgsMvyM0_Z6MNRnXnIlK8xt3j0pXGmL7CIqCvzQGX7vbjkwHK2DxtqoDEC5ulOgTK4tfcQhfyhxnxuO2DPSARZcffSEqqF9BkFVt&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAE",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+contract&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5l0Vvnyquao2G9nHwbzYR-QEp9V7AzUm9yM6qdpc8pDp9AOMUviQcdeDagYpVP8bg044Z-scdv1EyIRjVimTE3M3otBMn-JRsKxeW1r4_7Z6rgwpb7zSUZfyXYXWW3ghd2NQNCVNtIPOyTfqESXlD4rXioAS_yxb3BnarTY--1HF9KEZMXBA757qSQPH00N0Vj42qwoesyhQjLIAEYoU8pvK1rp_NTmCqmRuTOrYN0iw_ISRhGkzasrjwjbaBcVFGVSmc-zNFe5PR35kApbKzewsABMJDq5qit8ZqpoShSvFKC0Y2lJfCX4syM9W-65uZ5FzrZlflWVyfUpdRzq3MsWvWjT5f6r90g_3ZYj0xwyhNyX38QccLsDHKOVMrzX_3F7h5ELIrgCXmTgsMvyM0_Z6MNRnXnIlK8xt3j0pXGmL7CIqCvzQGX7vbjkwHK2DxtqoDEC5ulOgTK4tfcQhfyhxnxuO2DPSARZcffSEqqF9BkFVt"
+        },
+        {
+          "name": "Internship",
+          "parameters": {
+            "uds": "AOm0WdH9dlZHOwVi0Qx0dNjt8ym5YadNvutH5eF04BjHIg9esEYcLVDWnbNh2qyU3xmEYV2CWXbYwmBrYguNBrUp-a6GhyZnYAae7S-DdkdixuQH69otkG2zMKXXlmsFtvCRuI3L4YJfj45ij8yL4InHKi6ztWGskk_3WHa-CEkJowYkaein74RJMA3w1LgjYHO7LyEBcq2GhBbQ_hfObtIgcAcow2ql9dI03IJIcY7jr2FkoXzYZ96kzAlPtHvs--PlLRu0j1KWvSPS1fLJ2Xj9WUirzZqaiFfdLLgmnPbJBo3YTmrNrQtg6lOhUKvRUZ4Tiqo5kOxvmYTTWpKEzXioYeu5E8PUZNiOOFtHAQJISfadDoNFUYqd0Uedrjw4xVx5h1STz6P4RCTpVKYiyzh6uDSGZ0OtF2Sn5BaiVVgEtD7Q15F5SWK4hQvcVLyjAHofqpjB7v4dPOpXhXHa7YzVEmcCgyGt_OEgSIn23ju6LFIHfD4vLxX_Q6IgVbo8JqbsEaqaafUP",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand internship"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+internship&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5YadNvutH5eF04BjHIg9esEYcLVDWnbNh2qyU3xmEYV2CWXbYwmBrYguNBrUp-a6GhyZnYAae7S-DdkdixuQH69otkG2zMKXXlmsFtvCRuI3L4YJfj45ij8yL4InHKi6ztWGskk_3WHa-CEkJowYkaein74RJMA3w1LgjYHO7LyEBcq2GhBbQ_hfObtIgcAcow2ql9dI03IJIcY7jr2FkoXzYZ96kzAlPtHvs--PlLRu0j1KWvSPS1fLJ2Xj9WUirzZqaiFfdLLgmnPbJBo3YTmrNrQtg6lOhUKvRUZ4Tiqo5kOxvmYTTWpKEzXioYeu5E8PUZNiOOFtHAQJISfadDoNFUYqd0Uedrjw4xVx5h1STz6P4RCTpVKYiyzh6uDSGZ0OtF2Sn5BaiVVgEtD7Q15F5SWK4hQvcVLyjAHofqpjB7v4dPOpXhXHa7YzVEmcCgyGt_OEgSIn23ju6LFIHfD4vLxX_Q6IgVbo8JqbsEaqaafUP&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAF",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+internship&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5YadNvutH5eF04BjHIg9esEYcLVDWnbNh2qyU3xmEYV2CWXbYwmBrYguNBrUp-a6GhyZnYAae7S-DdkdixuQH69otkG2zMKXXlmsFtvCRuI3L4YJfj45ij8yL4InHKi6ztWGskk_3WHa-CEkJowYkaein74RJMA3w1LgjYHO7LyEBcq2GhBbQ_hfObtIgcAcow2ql9dI03IJIcY7jr2FkoXzYZ96kzAlPtHvs--PlLRu0j1KWvSPS1fLJ2Xj9WUirzZqaiFfdLLgmnPbJBo3YTmrNrQtg6lOhUKvRUZ4Tiqo5kOxvmYTTWpKEzXioYeu5E8PUZNiOOFtHAQJISfadDoNFUYqd0Uedrjw4xVx5h1STz6P4RCTpVKYiyzh6uDSGZ0OtF2Sn5BaiVVgEtD7Q15F5SWK4hQvcVLyjAHofqpjB7v4dPOpXhXHa7YzVEmcCgyGt_OEgSIn23ju6LFIHfD4vLxX_Q6IgVbo8JqbsEaqaafUP"
+        }
+      ]
+    },
+    {
+      "name": "Job type",
+      "options": [
+        {
+          "name": "Full time",
+          "parameters": {
+            "uds": "AOm0WdH9dlZHOwVi0Qx0dNjt8ym5DjyyRSpw0xWPekmwFgVm3fUXuPb8AmPS2VHjNphSkojKcYXsmZww1URDhEvJVOmMVjLYG2JVL3UAVzRBomeXonA_dmpYiccZLpSx2zmVdOCgGnZvGi5PcCrJdE4HQsbYpAaCdb_-HFODVu_MSLyTC09V0fVJGt_aecj8712FAWrjmjXEpRMKgZFeS6zbbk_-npnKYf58pcqDn4DhmEYRMIKb5gVaJTF0ldOZy_uawIjMOg4q8UU5FIgBBhhSRUfnM6sW0I_U5nsmrHxeE-JswdUmhtpEpkkSAYQhGKlZj2rkcx2Elg_DXwmnN_zsiT32Y157MWTImTDufdDAlAAQSCN59axCXhkudg0Ejjehwi56HAHinSIspPDG97iqdlkY-RAIzT6OjYdgRtcLo12CFSbNwW09bLrTxgWsASObrc0bck9gnCh12zCD338sSTrRZkP_dunk_lzxxIGfrhOvUQJ_vr0f-AjhgnKBslEFa6T7NW693lhMVLdb83mfo7AHCmk1tA",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand full time"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+full+time&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5DjyyRSpw0xWPekmwFgVm3fUXuPb8AmPS2VHjNphSkojKcYXsmZww1URDhEvJVOmMVjLYG2JVL3UAVzRBomeXonA_dmpYiccZLpSx2zmVdOCgGnZvGi5PcCrJdE4HQsbYpAaCdb_-HFODVu_MSLyTC09V0fVJGt_aecj8712FAWrjmjXEpRMKgZFeS6zbbk_-npnKYf58pcqDn4DhmEYRMIKb5gVaJTF0ldOZy_uawIjMOg4q8UU5FIgBBhhSRUfnM6sW0I_U5nsmrHxeE-JswdUmhtpEpkkSAYQhGKlZj2rkcx2Elg_DXwmnN_zsiT32Y157MWTImTDufdDAlAAQSCN59axCXhkudg0Ejjehwi56HAHinSIspPDG97iqdlkY-RAIzT6OjYdgRtcLo12CFSbNwW09bLrTxgWsASObrc0bck9gnCh12zCD338sSTrRZkP_dunk_lzxxIGfrhOvUQJ_vr0f-AjhgnKBslEFa6T7NW693lhMVLdb83mfo7AHCmk1tA&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAC",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+full+time&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5DjyyRSpw0xWPekmwFgVm3fUXuPb8AmPS2VHjNphSkojKcYXsmZww1URDhEvJVOmMVjLYG2JVL3UAVzRBomeXonA_dmpYiccZLpSx2zmVdOCgGnZvGi5PcCrJdE4HQsbYpAaCdb_-HFODVu_MSLyTC09V0fVJGt_aecj8712FAWrjmjXEpRMKgZFeS6zbbk_-npnKYf58pcqDn4DhmEYRMIKb5gVaJTF0ldOZy_uawIjMOg4q8UU5FIgBBhhSRUfnM6sW0I_U5nsmrHxeE-JswdUmhtpEpkkSAYQhGKlZj2rkcx2Elg_DXwmnN_zsiT32Y157MWTImTDufdDAlAAQSCN59axCXhkudg0Ejjehwi56HAHinSIspPDG97iqdlkY-RAIzT6OjYdgRtcLo12CFSbNwW09bLrTxgWsASObrc0bck9gnCh12zCD338sSTrRZkP_dunk_lzxxIGfrhOvUQJ_vr0f-AjhgnKBslEFa6T7NW693lhMVLdb83mfo7AHCmk1tA"
+        },
+        {
+          "name": "Part time",
+          "parameters": {
+            "uds": "AOm0WdEx6z2mIEOxVBIwUD8AJ_3YCKavmllkNaHyqVOszzbpUiKT5vRac2Di-oK-_k5xt8fmKuztihxuUWXqAN5Ot6W1DAbdA-3T9PCOCxqmbGAqlp-_WnZMhQbRtkZxR_OSgtdGz3MikONayRkqYPEbRrDTkbhfuQWfGQkHtIXaU6nSrKdBy_LEjockhWmHUQIlDCr461pD12abIblwm_Tl9RHTuwYZ_bWtn3Lc9ippCVzuBaOjcPc6_2Ebrb0u4mwNFztpO5aJuemANIegFUUTBeVABmr0js41ileaf8kJ5pMplEo6cwysVmKZ4x-NPtHIRSI3JElt1HBpJBgMzmybbwsp0JZHyuz90cVtz42XM_NGMRNgGH5xj4s8IMpYzWu_Gs_ovEiYi1Oiiu0FXVR0EFdCNiP3dEqCB7n7ANOeG_AeSINME8P_dcl8uiymTNj77IHgpzVlO9wkx4HG36XwtmuGQgtigJaKDVLaxPZK5YzUeo40ad62nA3kYoHCOPlfVPCp_4xAj5dM02PgaHOzCQ-zzYxGVw",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand part time"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+part+time&uds=AOm0WdEx6z2mIEOxVBIwUD8AJ_3YCKavmllkNaHyqVOszzbpUiKT5vRac2Di-oK-_k5xt8fmKuztihxuUWXqAN5Ot6W1DAbdA-3T9PCOCxqmbGAqlp-_WnZMhQbRtkZxR_OSgtdGz3MikONayRkqYPEbRrDTkbhfuQWfGQkHtIXaU6nSrKdBy_LEjockhWmHUQIlDCr461pD12abIblwm_Tl9RHTuwYZ_bWtn3Lc9ippCVzuBaOjcPc6_2Ebrb0u4mwNFztpO5aJuemANIegFUUTBeVABmr0js41ileaf8kJ5pMplEo6cwysVmKZ4x-NPtHIRSI3JElt1HBpJBgMzmybbwsp0JZHyuz90cVtz42XM_NGMRNgGH5xj4s8IMpYzWu_Gs_ovEiYi1Oiiu0FXVR0EFdCNiP3dEqCB7n7ANOeG_AeSINME8P_dcl8uiymTNj77IHgpzVlO9wkx4HG36XwtmuGQgtigJaKDVLaxPZK5YzUeo40ad62nA3kYoHCOPlfVPCp_4xAj5dM02PgaHOzCQ-zzYxGVw&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAD",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+part+time&uds=AOm0WdEx6z2mIEOxVBIwUD8AJ_3YCKavmllkNaHyqVOszzbpUiKT5vRac2Di-oK-_k5xt8fmKuztihxuUWXqAN5Ot6W1DAbdA-3T9PCOCxqmbGAqlp-_WnZMhQbRtkZxR_OSgtdGz3MikONayRkqYPEbRrDTkbhfuQWfGQkHtIXaU6nSrKdBy_LEjockhWmHUQIlDCr461pD12abIblwm_Tl9RHTuwYZ_bWtn3Lc9ippCVzuBaOjcPc6_2Ebrb0u4mwNFztpO5aJuemANIegFUUTBeVABmr0js41ileaf8kJ5pMplEo6cwysVmKZ4x-NPtHIRSI3JElt1HBpJBgMzmybbwsp0JZHyuz90cVtz42XM_NGMRNgGH5xj4s8IMpYzWu_Gs_ovEiYi1Oiiu0FXVR0EFdCNiP3dEqCB7n7ANOeG_AeSINME8P_dcl8uiymTNj77IHgpzVlO9wkx4HG36XwtmuGQgtigJaKDVLaxPZK5YzUeo40ad62nA3kYoHCOPlfVPCp_4xAj5dM02PgaHOzCQ-zzYxGVw"
+        },
+        {
+          "name": "Contract",
+          "parameters": {
+            "uds": "AOm0WdH9dlZHOwVi0Qx0dNjt8ym5l0Vvnyquao2G9nHwbzYR-QEp9V7AzUm9yM6qdpc8pDp9AOMUviQcdeDagYpVP8bg044Z-scdv1EyIRjVimTE3M3otBMn-JRsKxeW1r4_7Z6rgwpb7zSUZfyXYXWW3ghd2NQNCVNtIPOyTfqESXlD4rXioAS_yxb3BnarTY--1HF9KEZMXBA757qSQPH00N0Vj42qwoesyhQjLIAEYoU8pvK1rp_NTmCqmRuTOrYN0iw_ISRhGkzasrjwjbaBcVFGVSmc-zNFe5PR35kApbKzewsABMJDq5qit8ZqpoShSvFKC0Y2lJfCX4syM9W-65uZ5FzrZlflWVyfUpdRzq3MsWvWjT5f6r90g_3ZYj0xwyhNyX38QccLsDHKOVMrzX_3F7h5ELIrgCXmTgsMvyM0_Z6MNRnXnIlK8xt3j0pXGmL7CIqCvzQGX7vbjkwHK2DxtqoDEC5ulOgTK4tfcQhfyhxnxuO2DPSARZcffSEqqF9BkFVt",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand contract"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+contract&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5l0Vvnyquao2G9nHwbzYR-QEp9V7AzUm9yM6qdpc8pDp9AOMUviQcdeDagYpVP8bg044Z-scdv1EyIRjVimTE3M3otBMn-JRsKxeW1r4_7Z6rgwpb7zSUZfyXYXWW3ghd2NQNCVNtIPOyTfqESXlD4rXioAS_yxb3BnarTY--1HF9KEZMXBA757qSQPH00N0Vj42qwoesyhQjLIAEYoU8pvK1rp_NTmCqmRuTOrYN0iw_ISRhGkzasrjwjbaBcVFGVSmc-zNFe5PR35kApbKzewsABMJDq5qit8ZqpoShSvFKC0Y2lJfCX4syM9W-65uZ5FzrZlflWVyfUpdRzq3MsWvWjT5f6r90g_3ZYj0xwyhNyX38QccLsDHKOVMrzX_3F7h5ELIrgCXmTgsMvyM0_Z6MNRnXnIlK8xt3j0pXGmL7CIqCvzQGX7vbjkwHK2DxtqoDEC5ulOgTK4tfcQhfyhxnxuO2DPSARZcffSEqqF9BkFVt&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAE",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+contract&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5l0Vvnyquao2G9nHwbzYR-QEp9V7AzUm9yM6qdpc8pDp9AOMUviQcdeDagYpVP8bg044Z-scdv1EyIRjVimTE3M3otBMn-JRsKxeW1r4_7Z6rgwpb7zSUZfyXYXWW3ghd2NQNCVNtIPOyTfqESXlD4rXioAS_yxb3BnarTY--1HF9KEZMXBA757qSQPH00N0Vj42qwoesyhQjLIAEYoU8pvK1rp_NTmCqmRuTOrYN0iw_ISRhGkzasrjwjbaBcVFGVSmc-zNFe5PR35kApbKzewsABMJDq5qit8ZqpoShSvFKC0Y2lJfCX4syM9W-65uZ5FzrZlflWVyfUpdRzq3MsWvWjT5f6r90g_3ZYj0xwyhNyX38QccLsDHKOVMrzX_3F7h5ELIrgCXmTgsMvyM0_Z6MNRnXnIlK8xt3j0pXGmL7CIqCvzQGX7vbjkwHK2DxtqoDEC5ulOgTK4tfcQhfyhxnxuO2DPSARZcffSEqqF9BkFVt"
+        },
+        {
+          "name": "Internship",
+          "parameters": {
+            "uds": "AOm0WdH9dlZHOwVi0Qx0dNjt8ym5YadNvutH5eF04BjHIg9esEYcLVDWnbNh2qyU3xmEYV2CWXbYwmBrYguNBrUp-a6GhyZnYAae7S-DdkdixuQH69otkG2zMKXXlmsFtvCRuI3L4YJfj45ij8yL4InHKi6ztWGskk_3WHa-CEkJowYkaein74RJMA3w1LgjYHO7LyEBcq2GhBbQ_hfObtIgcAcow2ql9dI03IJIcY7jr2FkoXzYZ96kzAlPtHvs--PlLRu0j1KWvSPS1fLJ2Xj9WUirzZqaiFfdLLgmnPbJBo3YTmrNrQtg6lOhUKvRUZ4Tiqo5kOxvmYTTWpKEzXioYeu5E8PUZNiOOFtHAQJISfadDoNFUYqd0Uedrjw4xVx5h1STz6P4RCTpVKYiyzh6uDSGZ0OtF2Sn5BaiVVgEtD7Q15F5SWK4hQvcVLyjAHofqpjB7v4dPOpXhXHa7YzVEmcCgyGt_OEgSIn23ju6LFIHfD4vLxX_Q6IgVbo8JqbsEaqaafUP",
+            "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand internship"
+          },
+          "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+internship&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5YadNvutH5eF04BjHIg9esEYcLVDWnbNh2qyU3xmEYV2CWXbYwmBrYguNBrUp-a6GhyZnYAae7S-DdkdixuQH69otkG2zMKXXlmsFtvCRuI3L4YJfj45ij8yL4InHKi6ztWGskk_3WHa-CEkJowYkaein74RJMA3w1LgjYHO7LyEBcq2GhBbQ_hfObtIgcAcow2ql9dI03IJIcY7jr2FkoXzYZ96kzAlPtHvs--PlLRu0j1KWvSPS1fLJ2Xj9WUirzZqaiFfdLLgmnPbJBo3YTmrNrQtg6lOhUKvRUZ4Tiqo5kOxvmYTTWpKEzXioYeu5E8PUZNiOOFtHAQJISfadDoNFUYqd0Uedrjw4xVx5h1STz6P4RCTpVKYiyzh6uDSGZ0OtF2Sn5BaiVVgEtD7Q15F5SWK4hQvcVLyjAHofqpjB7v4dPOpXhXHa7YzVEmcCgyGt_OEgSIn23ju6LFIHfD4vLxX_Q6IgVbo8JqbsEaqaafUP&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQkbEKegQIExAF",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+internship&uds=AOm0WdH9dlZHOwVi0Qx0dNjt8ym5YadNvutH5eF04BjHIg9esEYcLVDWnbNh2qyU3xmEYV2CWXbYwmBrYguNBrUp-a6GhyZnYAae7S-DdkdixuQH69otkG2zMKXXlmsFtvCRuI3L4YJfj45ij8yL4InHKi6ztWGskk_3WHa-CEkJowYkaein74RJMA3w1LgjYHO7LyEBcq2GhBbQ_hfObtIgcAcow2ql9dI03IJIcY7jr2FkoXzYZ96kzAlPtHvs--PlLRu0j1KWvSPS1fLJ2Xj9WUirzZqaiFfdLLgmnPbJBo3YTmrNrQtg6lOhUKvRUZ4Tiqo5kOxvmYTTWpKEzXioYeu5E8PUZNiOOFtHAQJISfadDoNFUYqd0Uedrjw4xVx5h1STz6P4RCTpVKYiyzh6uDSGZ0OtF2Sn5BaiVVgEtD7Q15F5SWK4hQvcVLyjAHofqpjB7v4dPOpXhXHa7YzVEmcCgyGt_OEgSIn23ju6LFIHfD4vLxX_Q6IgVbo8JqbsEaqaafUP"
+        }
+      ]
+    },
+    {
+      "name": "No degree",
+      "parameters": {
+        "uds": "AOm0WdE2fekQnsyfYEw8JPYozOKz6UajbOGdD6d7hF3_mCBunFXKh8h9fesxdRWNOcFzuVib4Nkuds8YcaVjWigm8hXEe3poLh2QvIUMD6xv1DV7VOgc8FygmR1VJbG_jOxcyLF2EsQlX019mprwEn2o7nldadFKIS57E2IHOix916S2X0S56YEGpPxSbAO5JU72FSBPjK9o-fJbyOqrahR-9jGacuh6z6pJGuUZedb7ZujMeehBI96xsLd8KXUSKzNJC98qohAKrvCfj-trU7-gh0nTshzt5z11vZonoi1L2wCt6i0aWaH5xCdf5Gu1eEjzb9l_rqStGueotoUym9wDHwDcVnKUmZJDhi7-8vLwJn4Aa_xLLAE",
+        "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand no degree"
+      },
+      "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+no+degree&uds=AOm0WdE2fekQnsyfYEw8JPYozOKz6UajbOGdD6d7hF3_mCBunFXKh8h9fesxdRWNOcFzuVib4Nkuds8YcaVjWigm8hXEe3poLh2QvIUMD6xv1DV7VOgc8FygmR1VJbG_jOxcyLF2EsQlX019mprwEn2o7nldadFKIS57E2IHOix916S2X0S56YEGpPxSbAO5JU72FSBPjK9o-fJbyOqrahR-9jGacuh6z6pJGuUZedb7ZujMeehBI96xsLd8KXUSKzNJC98qohAKrvCfj-trU7-gh0nTshzt5z11vZonoi1L2wCt6i0aWaH5xCdf5Gu1eEjzb9l_rqStGueotoUym9wDHwDcVnKUmZJDhi7-8vLwJn4Aa_xLLAE&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQxKsJKAJ6BAgYEAE&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+no+degree&uds=AOm0WdE2fekQnsyfYEw8JPYozOKz6UajbOGdD6d7hF3_mCBunFXKh8h9fesxdRWNOcFzuVib4Nkuds8YcaVjWigm8hXEe3poLh2QvIUMD6xv1DV7VOgc8FygmR1VJbG_jOxcyLF2EsQlX019mprwEn2o7nldadFKIS57E2IHOix916S2X0S56YEGpPxSbAO5JU72FSBPjK9o-fJbyOqrahR-9jGacuh6z6pJGuUZedb7ZujMeehBI96xsLd8KXUSKzNJC98qohAKrvCfj-trU7-gh0nTshzt5z11vZonoi1L2wCt6i0aWaH5xCdf5Gu1eEjzb9l_rqStGueotoUym9wDHwDcVnKUmZJDhi7-8vLwJn4Aa_xLLAE"
+    },
+    {
+      "name": "Remote",
+      "parameters": {
+        "uds": "AOm0WdE2fekQnsyfYEw8JPYozOKzlRRlbasBhwdoXTOP_lmB_NG7GFC_ZvnE0EsqB6jAnwhjZc8nGWC8thlzH5E1uGy3wwTjsPKyzV6wtllN5f3XYyKrufDtAf_q4Gdb018ZpxQ_F8jQNI4CsZXXiV_xC9kOk2RXFsls1RnLXUtpXeAVmMOZ1uzo2l6B-oaWWCO2oUpFPSKYco5Wes4twL-Pqleix-IFqDtwfWVLiv--e1ta04efmx6orm5cm-AszAu79v6ivsjl0HLcQSrwHepBWofZ3Rm4WVn8I0WUMbyNDmjBaGp8X1EoJrh_842dEOrWImKaDRACpR64_vDVAMOxghNP4etjp7arS1ez4i5jrH2tPeztl5E",
+        "q": "Senior Town Planner Principal Planner Team Lead, Planning Planning Manager Urban Planner Policy Planner Development Manager Strategic Planner jobs South Africa New Zealand remote"
+      },
+      "link": "https://www.google.com/search?sca_esv=40c1005c31a86cdc&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead,+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+remote&uds=AOm0WdE2fekQnsyfYEw8JPYozOKzlRRlbasBhwdoXTOP_lmB_NG7GFC_ZvnE0EsqB6jAnwhjZc8nGWC8thlzH5E1uGy3wwTjsPKyzV6wtllN5f3XYyKrufDtAf_q4Gdb018ZpxQ_F8jQNI4CsZXXiV_xC9kOk2RXFsls1RnLXUtpXeAVmMOZ1uzo2l6B-oaWWCO2oUpFPSKYco5Wes4twL-Pqleix-IFqDtwfWVLiv--e1ta04efmx6orm5cm-AszAu79v6ivsjl0HLcQSrwHepBWofZ3Rm4WVn8I0WUMbyNDmjBaGp8X1EoJrh_842dEOrWImKaDRACpR64_vDVAMOxghNP4etjp7arS1ez4i5jrH2tPeztl5E&udm=8&sa=X&ved=2ahUKEwj0p7-ewaiPAxX64MkDHYnnM3QQxKsJKAN6BAgZEAE&ictx=0",
+      "serpapi_link": "https://serpapi.com/search.json?engine=google_jobs&google_domain=google.com&hl=en&q=Senior+Town+Planner+Principal+Planner+Team+Lead%2C+Planning+Planning+Manager+Urban+Planner+Policy+Planner+Development+Manager+Strategic+Planner+jobs+South+Africa+New+Zealand+remote&uds=AOm0WdE2fekQnsyfYEw8JPYozOKzlRRlbasBhwdoXTOP_lmB_NG7GFC_ZvnE0EsqB6jAnwhjZc8nGWC8thlzH5E1uGy3wwTjsPKyzV6wtllN5f3XYyKrufDtAf_q4Gdb018ZpxQ_F8jQNI4CsZXXiV_xC9kOk2RXFsls1RnLXUtpXeAVmMOZ1uzo2l6B-oaWWCO2oUpFPSKYco5Wes4twL-Pqleix-IFqDtwfWVLiv--e1ta04efmx6orm5cm-AszAu79v6ivsjl0HLcQSrwHepBWofZ3Rm4WVn8I0WUMbyNDmjBaGp8X1EoJrh_842dEOrWImKaDRACpR64_vDVAMOxghNP4etjp7arS1ez4i5jrH2tPeztl5E"
+    }
+  ],
+  "search_information": {
+    "jobs_results_state": "Fully empty"
+  },
+  "error": "Google hasn't returned any results for this query."
+}
+2025-08-26 14:47:40.804402 - Found 0 jobs for query: Senior Town Planner
+
+Principal Planner
+
+Team Lead, Planning
+
+Planning Manager
+
+Urban Planner
+
+Policy Planner
+
+Development Manager
+
+Strategic Planner jobs South Africa
+2025-08-26 16:03:40.884699 - 🔍 Starting scraper for: Grobbelaar, Jacobus Daniel Plumber
+
+Registered Plumber
+
+Plumbing Supervisor
+
+Plumbing Team Leader
+
+Drainlayer
+
+Gasfitter
+ jobs in South Africa in New Zealand (Client: Grobbelaar, Jacobus Daniel)
+2025-08-26 16:03:41.723504 - ❌ HTTP Error 401: {
+  "error": "Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key"
+}
+2025-08-26 16:20:01.120159 - 🔍 Starting scraper for: Grobbelaar, Jacobus Daniel Plumber
+
+Registered Plumber
+
+Plumbing Supervisor
+
+Plumbing Team Leader
+
+Drainlayer
+
+Gasfitter
+ jobs in New Zealand in New Zealand (Client: Grobbelaar, Jacobus Daniel)
+2025-08-26 16:20:01.892871 - ❌ HTTP Error 401: {
+  "error": "Invalid API key. Your API key should be here: https://serpapi.com/manage-api-key"
+}
+2025-08-26 17:47:25.647573 - 🔍 Starting scraper for: Grobbelaar, Jacobus Daniel Plumber
+
+Registered Plumber
+
+Plumbing Supervisor
+
+Plumbing Team Leader
+
+Drainlayer
+
+Gasfitter
+ jobs in New Zealand in New Zealand (Client: Grobbelaar, Jacobus Daniel)
+2025-08-26 17:47:27.419513 - ⚠️ No jobs found for query: Grobbelaar, Jacobus Daniel Plumber
+
+Registered Plumber
+
+Plumbing Supervisor
+
+Plumbing Team Leader
+
+Drainlayer
+
+Gasfitter
+ jobs in New Zealand
